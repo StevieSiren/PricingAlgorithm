@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title>SkySilk Pricing</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="pricing.css">
   </head>
   <body>
 
     <h1 style="text-align: center; padding-bottom: 50px;">Pricing</h1>
 
-    <div class="btn-group">
+    <div class="btn-group btnGroup">
         <button type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="vcpuButton">
           VCPU
         </button>
@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div class="btn-group">
+    <div class="btn-group btnGroup">
         <button type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ramButton">
           RAM
         </button>
@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <div class="btn-group">
+    <div class="btn-group btnGroup">
         <button type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ssdButton">
           SSD
         </button>
@@ -64,7 +64,15 @@
       </div>
     </div>
 
-    <button style="margin-left: 5%; margin-right: 5%" type="button" class="btn btn-success btn-lg" id="calculateButton">Calculate</button>
+
+
+    <div class="container">
+
+      <div class="jumbotron" id="finalPrice">
+        <button style="margin-left: 5%; margin-right: 5%" type="button" class="btn btn-success btn-lg" id="calculateButton">Calculate</button>
+        Final Price
+      </div>
+    </div>
 
     <script type="text/javascript" src="pricing.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

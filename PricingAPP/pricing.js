@@ -9,6 +9,7 @@ var ssdDropdown = document.querySelectorAll(".ssdDropdown");
 
 
 var calculateButton = document.querySelector("#calculateButton");
+var finalPrice = document.querySelector("#finalPrice");
 
 
 // VCPU
@@ -68,6 +69,6 @@ function calculate() {
     totalPrice = vcpuCost + ramCost + ssdCost;
   }
 
-  return alert("Total Price: " + "$" + Math.round(totalPrice));
+  finalPrice.textContent = "Total Price: " + "$" + Math.round(totalPrice);
 
 }
