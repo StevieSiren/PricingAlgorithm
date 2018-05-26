@@ -7,6 +7,12 @@ var ramDropdown = document.querySelectorAll(".ramDropdown");
 var ssdButton = document.querySelector("#ssdButton");
 var ssdDropdown = document.querySelectorAll(".ssdDropdown");
 
+var vcpuButtonAmount = document.querySelector("#vcpuButtonAmount");
+var ramButtonAmount = document.querySelector("#ramButtonAmount");
+var ssdButtonAmount = document.querySelector("#ssdButtonAmount");
+var finalPriceText = document.querySelector("#finalPriceText");
+
+
 
 var calculateButton = document.querySelector("#calculateButton");
 var finalPrice = document.querySelector("#finalPrice");
@@ -16,7 +22,7 @@ var finalPrice = document.querySelector("#finalPrice");
 for(let i = 0; i < vcpuDropdown.length; i++) {
   vcpuDropdown[i].addEventListener("click", function() {
     var clickedValue = vcpuDropdown[i].textContent
-    vcpuButton.textContent = clickedValue;
+    vcpuButtonAmount.textContent = clickedValue;
   });
 }
 
@@ -24,7 +30,7 @@ for(let i = 0; i < vcpuDropdown.length; i++) {
 for(let i = 0; i < ramDropdown.length; i++) {
   ramDropdown[i].addEventListener("click", function() {
     var clickedValue = ramDropdown[i].textContent
-    ramButton.textContent = clickedValue;
+    ramButtonAmount.textContent = clickedValue;
   });
 }
 
@@ -32,7 +38,7 @@ for(let i = 0; i < ramDropdown.length; i++) {
 for(let i = 0; i < ssdDropdown.length; i++) {
   ssdDropdown[i].addEventListener("click", function() {
     var clickedValue = ssdDropdown[i].textContent
-    ssdButton.textContent = clickedValue;
+    ssdButtonAmount.textContent = clickedValue;
   });
 }
 
@@ -42,9 +48,9 @@ calculateButton.addEventListener("click", function() {
 })
 
 function calculate() {
-  var x = Number(vcpuButton.textContent);
-  var y = Number(ramButton.textContent);
-  var z = Number(ssdButton.textContent);
+  var x = Number(vcpuButtonAmount.textContent);
+  var y = Number(ramButtonAmount.textContent);
+  var z = Number(ssdButtonAmount.textContent);
 
   var vcpuPrice = 2.36 * (1.0277 ** x);
   var ramPrice = 1.17435 * (0.9991 ** y);
@@ -69,6 +75,10 @@ function calculate() {
     totalPrice = vcpuCost + ramCost + ssdCost;
   }
 
-  finalPrice.textContent = "Total Price: " + "$" + Math.round(totalPrice);
+  finalPriceText.textContent = "Total Price: " + "$" + Math.round(totalPrice);
+
+}
+
+function reset() {
 
 }

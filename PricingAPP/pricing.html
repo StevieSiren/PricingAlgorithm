@@ -8,70 +8,91 @@
   </head>
   <body>
 
-    <h1 style="text-align: center; padding-bottom: 50px;">Pricing</h1>
+    
+    <h1 style="text-align: center; margin-bottom: 8%;"><img src="C:\Users\Stephen\Downloads\skysilk.png"></h1>
 
-    <div class="btn-group btnGroup">
-        <button type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="vcpuButton">
-          VCPU
-        </button>
-      <div class="dropdown-menu">
-        <li class="dropdown-item vcpuDropdown">1</li>
-        <li class="dropdown-item vcpuDropdown">2</li>
-        <li class="dropdown-item vcpuDropdown">3</li>
-        <li class="dropdown-item vcpuDropdown">4</li>
-        <li class="dropdown-item vcpuDropdown">5</li>
-        <li class="dropdown-item vcpuDropdown">6</li>
-        <li class="dropdown-item vcpuDropdown">7</li>
-        <li class="dropdown-item vcpuDropdown">8</li>
-      </div>
-    </div>
+    <div class="container">
+    	
+    
+    	<div class="row" style="margin: 0 auto; padding-left: 13%;">
+    		<div class="col-sm">
+    				<div class="btn-group btnGroup">
+			        <button type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="vcpuButton">
+			          <span>VCPU: </span><span id="vcpuButtonAmount"></span>
+			        </button>
+			      <div class="dropdown-menu">
+			        <li class="dropdown-item vcpuDropdown">1</li>
+			        <li class="dropdown-item vcpuDropdown">2</li>
+			        <li class="dropdown-item vcpuDropdown">3</li>
+			        <li class="dropdown-item vcpuDropdown">4</li>
+			        <li class="dropdown-item vcpuDropdown">5</li>
+			        <li class="dropdown-item vcpuDropdown">6</li>
+			        <li class="dropdown-item vcpuDropdown">7</li>
+			        <li class="dropdown-item vcpuDropdown">8</li>
+			      </div>
+			    </div>	
+	    	
+    		</div>
+		    
+		    
+    		<div class="col-sm">
+    			  <div class="btn-group btnGroup">
+			        <button type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ramButton">
+			          <span>RAM: </span><span id="ramButtonAmount"></span>
+			        </button>
+			      <div class="dropdown-menu">
+			        <li class="dropdown-item ramDropdown">4</li>
+			        <li class="dropdown-item ramDropdown">8</li>
+			        <li class="dropdown-item ramDropdown">12</li>
+			        <li class="dropdown-item ramDropdown">16</li>
+			        <li class="dropdown-item ramDropdown">20</li>
+			        <li class="dropdown-item ramDropdown">24</li>
+			        <li class="dropdown-item ramDropdown">28</li>
+			        <li class="dropdown-item ramDropdown">32</li>
+			        <li class="dropdown-item ramDropdown">36</li>
+			        <li class="dropdown-item ramDropdown">40</li>
+			        <li class="dropdown-item ramDropdown">44</li>
+			        <li class="dropdown-item ramDropdown">48</li>
 
-    <div class="btn-group btnGroup">
-        <button type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ramButton">
-          RAM
-        </button>
-      <div class="dropdown-menu">
-        <li class="dropdown-item ramDropdown">4</li>
-        <li class="dropdown-item ramDropdown">8</li>
-        <li class="dropdown-item ramDropdown">12</li>
-        <li class="dropdown-item ramDropdown">16</li>
-        <li class="dropdown-item ramDropdown">20</li>
-        <li class="dropdown-item ramDropdown">24</li>
-        <li class="dropdown-item ramDropdown">28</li>
-        <li class="dropdown-item ramDropdown">32</li>
-        <li class="dropdown-item ramDropdown">36</li>
-        <li class="dropdown-item ramDropdown">40</li>
-        <li class="dropdown-item ramDropdown">44</li>
-        <li class="dropdown-item ramDropdown">48</li>
-
-      </div>
-    </div>
-
-    <div class="btn-group btnGroup">
-        <button type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ssdButton">
-          SSD
-        </button>
-      <div class="dropdown-menu">
-        <a class="dropdown-item ssdDropdown">60</a>
-        <a class="dropdown-item ssdDropdown">100</a>
-        <a class="dropdown-item ssdDropdown">200</a>
-        <a class="dropdown-item ssdDropdown">300</a>
-        <a class="dropdown-item ssdDropdown">400</a>
-        <a class="dropdown-item ssdDropdown">500</a>
-        <a class="dropdown-item ssdDropdown">600</a>
-        <a class="dropdown-item ssdDropdown">700</a>
-        <a class="dropdown-item ssdDropdown">800</a>
-      </div>
-    </div>
-
+			      </div>
+			    </div>
+    		</div>
+		  
+    		<div class="col-sm">
+	    		<div class="btn-group btnGroup">
+			        <button type="button" class="btn btn-primary dropdown-toggle btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ssdButton">
+			          <span>SSD: </span><span id="ssdButtonAmount"></span>
+			        </button>
+			      <div class="dropdown-menu">
+			        <a class="dropdown-item ssdDropdown">60</a>
+			        <a class="dropdown-item ssdDropdown">100</a>
+			        <a class="dropdown-item ssdDropdown">200</a>
+			        <a class="dropdown-item ssdDropdown">300</a>
+			        <a class="dropdown-item ssdDropdown">400</a>
+			        <a class="dropdown-item ssdDropdown">500</a>
+			        <a class="dropdown-item ssdDropdown">600</a>
+			        <a class="dropdown-item ssdDropdown">700</a>
+			        <a class="dropdown-item ssdDropdown">800</a>
+			      </div>
+			    </div>	
+    		</div>
+		    
+	   </div>
+	</div>
 
 
     <div class="container">
 
       <div class="jumbotron" id="finalPrice">
         <button style="margin-left: 5%; margin-right: 5%" type="button" class="btn btn-success btn-lg" id="calculateButton">Calculate</button>
-        Final Price
+        <span id="finalPriceText"></span>
       </div>
+    </div>
+
+    <div class="container">
+    	<div class="jumbotron">
+    		<img src="C:\Users\Stephen\Downloads\skysilkpricing.png" style="height: 400px; width: 100%">
+    	</div>
     </div>
 
     <script type="text/javascript" src="pricing.js"></script>

@@ -1,9 +1,11 @@
 body {
   font-family: sans-serif;
+
 }
 
 h1 {
   margin: 40px 0;
+  color: steelblue;
 }
 
 #finalPrice {
@@ -16,7 +18,7 @@ h1 {
 }
 
 .btnGroup {
-  margin: auto;
+  margin-top: 15%;
   text-align: center;
   padding-left: 5%;
   transition-duration: 2s;
